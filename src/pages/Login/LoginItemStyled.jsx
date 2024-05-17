@@ -4,7 +4,7 @@ const LoginPage = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 `
 
 const LoginForm = styled.div`
@@ -81,10 +81,6 @@ const LoginForm = styled.div`
 
     .install-app {
         margin: 10px 20px;
-    }
-
-    .color-sky {
-        color: rgb(0, 149, 246);
     }
 
     .store-link {

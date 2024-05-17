@@ -6,7 +6,7 @@ export const Login = () => {
   const navigate = useNavigate();
   return (
     <>
-      <LoginPage>
+      <LoginPage className="gap-4">
         <img src="login.png" alt=""/>
         <LoginForm>
           <Card className="login-form">
@@ -36,14 +36,14 @@ export const Login = () => {
                 Đăng nhập
               </Button>
               <Strike ><StrikeContent>HOẶC</StrikeContent></Strike>
-              <Link className="font-600 color-navy fb-link" href="https://www.facebook.com/" underline="none">Đăng nhập bằng Facebook</Link>
-              <Link className="color-navy forgot-pass" href="" underline="none">Quên mật khẩu?</Link>
+              <Link className="font-600 color-navy fb-link text-center	" href="https://www.facebook.com/" underline="none">Đăng nhập bằng Facebook</Link>
+              <Link className="color-navy forgot-pass text-center	" href="" underline="none">Quên mật khẩu?</Link>
             </CardContent>
           </Card>
-          <Card className="create-account">
+          <Card className="create-account text-center	">
             <Link className="font-600 color-sky" underline="none" href="">Tạo tài khoản mới</Link>
           </Card>
-          <p className="install-app">Tải ứng dụng.</p>
+          <p className="install-app text-center	">Tải ứng dụng.</p>
           <div className="store-link">
             <img src="gg-play.png" alt=""/>
             <img src="microsoft.png" alt=""/>

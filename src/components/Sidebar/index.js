@@ -8,6 +8,8 @@ import MapsUgcOutlinedIcon from '@mui/icons-material/MapsUgcOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import AddBoxOutlinedIcon from '@mui/icons-material/AddBoxOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LogoutIcon from '@mui/icons-material/Logout';
 
 export const Sidebar = () => {
     const sidebarItem = [
@@ -43,17 +45,36 @@ export const Sidebar = () => {
             icon: <AccountCircleOutlinedIcon />,
             title: "Trang cá nhân"
         },
+        {
+            icon: <LogoutIcon />,
+            title: "Đăng xuất"
+        }
     ]
     return(
         <SidebarSlide>
             <Box>
                 <Link href="/"><img src="logo-insta.png" alt=""/></Link>
                 <div className="menu-list">
-                    {sidebarItem.map(item => {
+                    <div className="menu-item-icon ig-icon"><InstagramIcon /></div>
+                    {sidebarItem.map((item, index) => {
+                        let className = '';
+                        const lastIndex = sidebarItem.length - 1;
+                        switch(index){
+                            case 0:
+                                className = 'menu-item menu-item-active';
+                                break;
+                            
+                            case lastIndex:
+                                className = 'menu-item menu-item-last';
+                                break;
+
+                            default:
+                                className = 'menu-item'
+                        }
                         return (
-                            <div className="menu-item">
+                            <div className={className}>
                                 <span className="menu-item-icon">{item.icon}</span>
-                                <span>{item.title}</span>
+                                <span className="menu-item-text">{item.title}</span>
                             </div>
                         )
                     })}

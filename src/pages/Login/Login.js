@@ -7,11 +7,11 @@ export const Login = () => {
   return (
     <>
       <LoginPage className="gap-4">
-        <img src="login.png" alt=""/>
+        <img src="login.png" alt="" className="side-img"/>
         <LoginForm>
           <Card className="login-form">
             <CardContent>
-              <img src="logo-insta.png" className="login-logo" alt=""/>
+              <div className="flex justify-center"><img src="logo-insta.png" className="login-logo" alt=""/></div>
               <TextField
                 type="email"
                 id="outlined-basic"

@@ -5,6 +5,18 @@ const LoginPage = styled.div`
     justify-content: center;
     align-items: center;
     height: 90vh;
+
+    @media (min-width: 769px) {
+        .side-img {
+            display: block;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .side-img {
+            display: none;
+        }
+    }
 `
 
 const LoginForm = styled.div`

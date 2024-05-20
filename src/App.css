@@ -24,6 +24,18 @@
   color: #61dafb;
 }
 
+.color-sky {
+  color: rgb(12, 155, 251);
+}
+
+.color-sub {
+  color: rgb(115, 115, 115);
+}
+
+.color-ter-text {
+  color: rgb(199, 199, 199);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

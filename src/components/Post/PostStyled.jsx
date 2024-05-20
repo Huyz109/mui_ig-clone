@@ -3,6 +3,7 @@ import styled from "styled-components";
 const PostContent = styled.div`
     width: calc(-2px + min(470px, 100vw));
     font-size: 14px;
+    margin: 8px 0;
     
     .post-img {
         border-radius: 4px;
@@ -21,6 +22,14 @@ const PostContent = styled.div`
             color: rgb(0, 0, 0, 0.5);
         }
 
+        .liked {
+            color: red;
+        }
+
+        .liked:hover {
+            color: rgba(255, 0, 0, 0.8);
+        }
+
         .reaction-icon {
             gap: 10px;
         }
@@ -28,10 +37,6 @@ const PostContent = styled.div`
 
     .hashtag {
         color: #385898; 
-    }
-
-    .color-sub {
-        color: rgb(115, 115, 115);
     }
 
     .comment {
@@ -47,6 +52,8 @@ const PostContent = styled.div`
 
         border-bottom: 1px solid rgb(219, 219, 219);
     }
+
+
 `
 
 const PostHeader = styled.div`

@@ -4,4 +4,9 @@ const DashboardContent = styled.div`
     display: flex;
 `
 
-export {DashboardContent}
+const FeedPosts = styled.div`
+    max-width: 630px;
+    width: 100%;
+`
+
+export {DashboardContent, FeedPosts}

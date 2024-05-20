@@ -63,7 +63,7 @@ const SidebarSlide = styled.div`
     
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     width: 240px;
 
     .menu-item-text {
@@ -75,7 +75,7 @@ const SidebarSlide = styled.div`
     }
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     width: 80px;
 
     img {

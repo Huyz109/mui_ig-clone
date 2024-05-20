@@ -5,9 +5,16 @@ import Brightness1OutlinedIcon from '@mui/icons-material/Brightness1Outlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import BookmarkBorderOutlinedIcon from '@mui/icons-material/BookmarkBorderOutlined';
 import EmojiEmotionsOutlinedIcon from '@mui/icons-material/EmojiEmotionsOutlined';
-import { Input, TextField } from "@mui/material";
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+import { TextField } from "@mui/material";
+import { useState } from "react";
 
 export const Post = () => {
+    const [liked, setLike] = useState(false);
+    const [saved, setSave] = useState(false);
+
+
     return (
         <PostContent>
             <PostHeader>
@@ -22,11 +29,15 @@ export const Post = () => {
             <img src="post-img.jpg" alt="" className="post-img"/>
             <div className="icon-list flex justify-between">
                 <div className="reaction-icon flex">
-                    <FavoriteBorderOutlinedIcon />
+                    <span className='like-btn' onClick={() => setLike(!liked)}>
+                        {liked ? <FavoriteIcon className="liked"/> : <FavoriteBorderOutlinedIcon/>}
+                    </span>
                     <Brightness1OutlinedIcon />
                     <SendOutlinedIcon />
                 </div>
-                <BookmarkBorderOutlinedIcon />
+                <span onClick={() => setSave(!saved)}>
+                    {saved ? <BookmarkIcon /> : <BookmarkBorderOutlinedIcon />}
+                </span>
             </div>
             <p className="font-semibold">1.000.000 lượt thích</p>
             <div className="flex mt-0.5">
@@ -42,7 +53,7 @@ export const Post = () => {
                         placeholder="Thêm bình luận ..." 
                         variant="standard"
                         InputProps={{
-                                disableUnderline: true,
+                            disableUnderline: true,
                         }}
                         className="w-11/12 text-sm"
                         multiline 

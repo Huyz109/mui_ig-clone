@@ -93,11 +93,4 @@ const ReelsContent = styled.div`
     }
 `
 
-const PostHeader = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 12px;
-`
-
 export {ReelsContent}

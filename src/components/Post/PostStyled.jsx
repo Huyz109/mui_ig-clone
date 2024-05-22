@@ -52,8 +52,6 @@ const PostContent = styled.div`
 
         border-bottom: 1px solid rgb(219, 219, 219);
     }
-
-
 `
 
 const PostHeader = styled.div`

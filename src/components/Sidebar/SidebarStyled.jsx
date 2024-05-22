@@ -98,7 +98,7 @@ const SidebarSlide = styled.div`
 
     .menu-list {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
 
       .hide-mobile {
         display: none;
@@ -108,7 +108,7 @@ const SidebarSlide = styled.div`
     .search-bar {
       margin: 0 12px;
       background-color: rgb(239, 239, 239);
-      
+
       input {
         padding: 8px;
       }

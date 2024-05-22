@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Login } from './pages/Login/Login';
 import { Home } from './pages/Home/Home';
+import { Reels } from './pages/Reels/Reels';
 
 function App() {
   const theme = createTheme({
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/reels' element={<Reels />} />
         </Routes>
       </div>
     </ThemeProvider>

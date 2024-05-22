@@ -30,11 +30,11 @@ const ProfileBarContent = styled.div`
         }
     }
 
-    @media (min-width: 1025px) {
+    @media (min-width: 1160px) {
         display: block;
     }
 
-    @media (max-width: 1024px) {
+    @media (max-width: 1160px) {
         display: none;
     }
 `

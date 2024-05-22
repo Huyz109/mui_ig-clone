@@ -46,21 +46,12 @@ const SidebarSlide = styled.div`
     .menu-item:last-of-type {
       margin-top: auto;
     }
-
-    .menu-item-icon {
-        svg {
-            height: 30px;
-            width: 30px;
-        }
-    }
-
-    .ig-icon {
-      svg {
-            height: 30px;
-            width: 30px;
-        }
-    }
     
+  }
+
+  svg {
+    height: 30px;
+    width: 30px;
   }
 
   @media (min-width: 1025px) {
@@ -91,6 +82,38 @@ const SidebarSlide = styled.div`
       padding: 20px 14px 16px;
       margin-bottom: 19px;
     }
+  }
+
+  @media (max-width: 760px) {
+    width: 100%;
+    height: fit-content;
+    bottom: 0;
+    display: block;
+    background-color: white;
+    z-index: 2;
+
+    .ig-icon {
+      display: none;
+    }
+
+    .menu-list {
+      display: flex;
+      justify-content: center;
+
+      .hide-mobile {
+        display: none;
+      }
+    }
+
+    .search-bar {
+      margin: 0 12px;
+      background-color: rgb(239, 239, 239);
+      
+      input {
+        padding: 8px;
+      }
+    }
+    
   }
 
 `

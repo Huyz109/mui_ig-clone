@@ -85,9 +85,12 @@ const ReelsContent = styled.div`
         border-bottom: 1px solid rgb(219, 219, 219);
     }
 
-    
+    @media (max-width: 560px) {
+        width: 100%;
+        padding: 0 8px;
+        height: auto;
 
-
+    }
 `
 
 const PostHeader = styled.div`

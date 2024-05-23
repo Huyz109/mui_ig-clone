@@ -8,8 +8,9 @@ const ReelsContent = styled.div`
     height: 90vh;
 
     .video {
-        border-radius: 4px;
+        border-radius: 8px;
         height: 100%;
+        clip-path: inset(1px 1px);
     }
 
     .info {
